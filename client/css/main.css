@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  background-color: indigo;
+  color: #fff;
+  justify-content: space-between;
+  padding: 25px;
+  height: 70px;
+}
+.typing {
+  margin-bottom: 2px;
+  transform: translateY(-3px);
+  display: inline-block;
+}
+.user-leave-room {
+  color: rgba(102, 102, 102, 0.842);
+}
+
+.create-room button {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 4px;
+  font-weight: lighter;
+  color: rgba(76, 0, 130, 0.623);
+  margin: 0 3px;
+}
+
+.room-btn {
+  transform: translateY(-4px);
+}
+
+.group-input .error {
+  color: rgba(255, 0, 0, 0.781);
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo p,
+.logo a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.login {
+  width: 320px;
+  margin: 150px auto;
+}
+
+.register {
+  width: 320px;
+  margin: 100px auto;
+}
+
+.login h3 {
+  font-size: 25px;
+  color: indigo;
+  font-weight: 900;
+}
+
+.login-form,
+.register-form {
+  width: 100%;
+  margin: 20px 0;
+  padding: 50px 20px;
+  box-shadow: 1px 1px 0.55rem rgba(0, 0, 0, 0.144);
+}
+
+.group-input label,
+.login p {
+  font-weight: 400;
+  color: rgba(102, 102, 102, 0.842);
+}
+
+.group-input input {
+  border: 0.1rem solid indigo;
+}
+.group-input a {
+  color: rgba(102, 102, 102, 0.842);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.group-input input:focus {
+  box-shadow: 1px 1px 0.55rem rgba(76, 0, 130, 0.068);
+  border: 0.15rem solid indigo;
+}
+
+.group-input input,
+.group-input button {
+  display: block;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 9px;
+  width: 100%;
+  margin: 9px 0;
+}
+.group-input button {
+  background-color: indigo;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+}
+
+/* the chat  */
+
+.chat-room {
+  margin-top: 70px;
+}
+
+.message-form {
+  width: 100%;
+  position: fixed;
+  bottom: 10px;
+}
+
+.message-input input {
+  outline: none;
+  border: 0.13rem solid indigo;
+  font-size: 14px;
+  width: 80%;
+  border-radius: 10px;
+  color: rgba(102, 102, 102, 0.842);
+  padding: 8px 9px;
+  margin: 9px 3px 0px 3px;
+}
+.message-input button {
+  border: none;
+  padding: 10px 9px;
+  background-color: indigo;
+  text-transform: uppercase;
+  color: #fff;
+  transform: translateX(-4px);
+  margin: 0;
+  border-radius: 10px;
+}
+
+.messages {
+  width: 100%;
+  padding: 10px;
+  scroll-behavior: smooth;
+  height: 80% !important;
+  margin-bottom: 100px;
+}
+.client-message,
+.friend-message {
+  padding: 4px 15px;
+  width: 80%;
+  margin: 8px 0;
+  border-radius: 20px;
+}
+
+.client-message small,
+.friend-message small {
+  color: rgba(0, 0, 0, 0.555);
+}
+
+.friend-message {
+  border-bottom-left-radius: 0;
+  background-color: rgba(76, 0, 130, 0.164);
+}
+.client-message {
+  position: relative;
+  border-top-right-radius: 0;
+  left: 20%;
+  background-color: rgba(76, 0, 130, 0.623);
+}
+
+/* THe chatrooms */
+
+.chat-rooms {
+  margin: 10px 10px;
+  margin-top: 100px;
+}
+.search-room {
+  margin: 20px 0;
+}
+.search-room input {
+  border: 0.1rem solid indigo;
+}
+
+.search-room input:focus {
+  box-shadow: 1px 1px 0.55rem rgba(76, 0, 130, 0.068);
+  border: 0.15rem solid indigo;
+}
+
+.search-room input {
+  display: block;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 9px;
+  width: 100%;
+  margin: 9px 0;
+}
+
+.chat-rooms .room {
+  margin: 10px 0;
+  display: block;
+  box-shadow: 1px 1px 0.25rem rgba(0, 0, 0, 0.109);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.my-rooms {
+  color: rgba(76, 0, 130, 0.972);
+}
+
+.chat-rooms .room p {
+  color: indigo;
+  font-weight: 500;
+}
+.chat-rooms .room small {
+  color: rgba(76, 0, 130, 0.623);
+  padding: 0 10px;
+}
+
+/* modal */
+.create-modal {
+  position: absolute;
+  background-color: #fff;
+  padding: 100px 20px;
+  z-index: 1;
+  width: 100%;
+  display: none;
+  height: 100%;
+  color: rgba(76, 0, 130, 0.972);
+
+  top: 0;
+}
+
+.modal {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px 10px;
+  box-shadow: 1px 1px 0.55rem rgba(0, 0, 0, 0.144);
+  width: 320px;
+}
+
+.modal .heading * {
+  margin: 5px 0;
+}
+.modal .heading p,
+.modal .heading small {
+  color: rgba(102, 102, 102, 0.842);
+}
+
+.modal .close {
+  color: red;
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.icon-btn {
+  display: inline-block;
+  background-color: indigo !important;
+  padding: 0 !important;
+}
+.icon-btn img {
+  padding: 0;
+  height: 20px;
+}
+
+/* The chats are only visible on large screens
+and a change to the messages layout. Mobile and desktop responsive */
+@media screen and (max-width: 799px) {
+  .desktop-chats {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .chat-room {
+    display: flex;
+    flex: 1 1;
+  }
+  .chat-rooms {
+    margin-top: 10px;
+  }
+  .desktop-chats {
+    position: fixed;
+    width: 35%;
+    height: 100vh;
+    padding: 0 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+    margin-right: 100px;
+    padding-bottom: 200px;
+    box-shadow: 1px 1px 0.25rem rgba(0, 0, 0, 0.109);
+  }
+  .desktop-chats::-webkit-scrollbar {
+    width: 2px;
+  }
+  .desktop-chats::-webkit-scrollbar-track {
+    background-color: rgba(102, 102, 102, 0.198);
+  }
+
+  .desktop-messages {
+    margin-left: 35%;
+    width: 65%;
+    float: right;
+    padding: 0 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  form.message-form {
+    margin-left: 35%;
+    width: 75%;
+    padding: 0 30px;
+  }
+  form.message-form input {
+    padding: 10px 10px;
+  }
+}

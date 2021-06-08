@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="theme-color" content="#4b0082" >
+    <!-- <script defer src="https://stark-mountain-39904.herokuapp.com/socket.io/socket.io.js"></script> -->
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer type="module" src="../js/app.js"></script>
+    <script defer type="module" src="../js/chats.js"></script>
+    <script defer type="module" src="../js/deskchats.js"></script>
+    <title>Your Messages</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+             <p ><a id="chat-name" href="./home.html">ChatTV</a></p>
+             <small class="typing"></small>
+        </div>
+        <div class="create-room">
+            <button class="room-btn">Leave Room</button>
+            <button class="icon-btn"><img src="../img/share.svg" alt=""></button>
+        </div>
+     </div>
+
+    <div class="chat-room">
+        <!-- Show chats here -->
+        <div class="desktop-chats">
+            <div class="chat-rooms">
+                <div class="rooms">
+                    <div class="search-room">
+                        <input type="text" name="" id="search-room" placeholder="Search room">
+                    </div>
+                    <p id="response"></p>
+                    <h3 class="my-rooms">My Rooms</h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="desktop-messages">
+            <div class="messages">
+                <!-- Messages come here -->
+            </div> 
+        </div>
+        <form class="message-form" autocomplete="off">
+            <div class="message-input">
+                <input autocomplete="off" type="text" id="message" placeholder="Start typing..."> 
+                <button type="submit" class="submit-btn">Send</button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>
